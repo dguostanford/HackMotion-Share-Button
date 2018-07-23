@@ -1,0 +1,19 @@
+﻿<script>
+    // In this .html file, you should place everything required for the share function
+</script>
+
+<script src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+<script>
+    /// Here should be the FB.init() method
+
+    // shareFB is a function so it can be called within one simple line from WPF
+    shareFB = function () {
+        FB.ui(
+        {
+            method: 'share',
+            display: 'popup',
+            href: 'https://www.whataventure.com/assets/base/img/content/projects/prowinter/startups/hackmotion.jpg',
+        }, function(response) { });
+    }
+</script>

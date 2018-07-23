@@ -1,0 +1,16 @@
+﻿<Window x:Class="HackMotion_Share.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HackMotion_Share"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!-- This grid 'WebGrid' is used only to load the webBrowser -->
+        <Grid x:Name="WebGrid" Margin="0,0,0,0" Visibility="Hidden" />
+        <!-- This is definion of Share button in WPF XAML. The actual code is in MainWindow.xaml.cs file under method 'Button_Click' -->
+        <Button Content="Share on FaceBook" Click="Button_Click" />
+    </Grid>
+</Window>
